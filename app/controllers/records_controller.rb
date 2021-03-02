@@ -1,6 +1,6 @@
 class RecordsController < ApplicationController
   before_action :set_record, only: [:edit, :show]
-  before_action :move_to_index, except: [:index, :show]
+  before_action :move_to_index, except: [:index, :show, :search]
 
   def index
     @records = Record.includes(:user).order("created_at DESC")
@@ -30,6 +30,10 @@ class RecordsController < ApplicationController
   def show
     @comment = Comment.new
     @comments = @record.comments.includes(:user)
+  end
+
+  def search
+    @records = Record.search(params[:keyword])
   end
 
   private
