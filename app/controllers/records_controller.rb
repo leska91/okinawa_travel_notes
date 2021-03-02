@@ -13,6 +13,6 @@ class RecordsController < ApplicationController
 
   private
   def record_params
-    params.require(:record).permit(:text, :area_id)
+    params.require(:record).permit(:text, :area_id, :image)
   end
 end
