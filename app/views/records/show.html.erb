@@ -1,4 +1,5 @@
 <div class="contents row">
+  <% if user_signed_in? && current_user.id == @record.user_id %>
   <div class="more">
     <ul class="more_list">
       <li>
@@ -9,8 +10,9 @@
       </li>
     </ul>
   </div>
+  <% end %>
       <p><%= @record.text %></p>
-      <span class="name">
+      <span class="areaName">
         <%= @record.area.name %>
       </span>
       <%= image_tag @record.image.variant(resize: '500x500'), class: 'recordImage' if @record.image.attached? %>

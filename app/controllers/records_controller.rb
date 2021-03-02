@@ -1,8 +1,9 @@
 class RecordsController < ApplicationController
   before_action :set_record, only: [:edit, :show]
+  before_action :move_to_index, except: [:index, :show]
 
   def index
-    @records = Record.all
+    @records = Record.includes(:user).order("created_at DESC")
   end
 
   def new
@@ -31,10 +32,16 @@ class RecordsController < ApplicationController
 
   private
   def record_params
-    params.require(:record).permit(:text, :area_id, :image)
+    params.require(:record).permit(:text, :area_id, :image).merge(user_id: current_user.id)
   end
 
   def set_record
     @record = Record.find(params[:id])
+  end
+
+  def move_to_index
+    unless user_signed_in?
+      redirect_to action: :index
+    end
   end
 end
