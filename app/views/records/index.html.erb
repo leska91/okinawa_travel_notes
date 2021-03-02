@@ -1,0 +1,8 @@
+<div class="contents row">
+  <% @records.each do |record| %>
+      <p><%= record.text %></p>
+      <span class="name">
+        <%= record.area_id %>
+      </span>
+  <% end %>
+</div>
