@@ -2,7 +2,7 @@
   <% @records.each do |record| %>
       <p><%= record.text %></p>
       <span class="name">
-        <%= record.area_id %>
+        <%= record.area.name %>
       </span>
   <% end %>
 </div>
