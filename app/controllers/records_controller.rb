@@ -8,7 +8,7 @@ class RecordsController < ApplicationController
   end
 
   def create
-    Record.create
+    Record.create(record_params)
   end
 
   private

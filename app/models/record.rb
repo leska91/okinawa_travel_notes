@@ -4,5 +4,5 @@ class Record < ApplicationRecord
   has_one_attached :image
 
   validates :area_id, numericality: { other_than: 1 }
-  
+
 end

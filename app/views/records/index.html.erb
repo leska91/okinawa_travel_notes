@@ -4,5 +4,6 @@
       <span class="name">
         <%= record.area.name %>
       </span>
+      <%= image_tag record.image.variant(resize: '500x500'), class: 'recordImage' if record.image.attached? %>
   <% end %>
 </div>
