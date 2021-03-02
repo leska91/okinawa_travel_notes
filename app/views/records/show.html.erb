@@ -1,0 +1,17 @@
+<div class="contents row">
+  <div class="more">
+    <ul class="more_list">
+      <li>
+        <%= link_to '編集', edit_record_path(@record.id) %>
+      </li>
+      <li>
+        <%= link_to '削除', record_path(@record.id), method: :delete %>
+      </li>
+    </ul>
+  </div>
+      <p><%= @record.text %></p>
+      <span class="name">
+        <%= @record.area.name %>
+      </span>
+      <%= image_tag @record.image.variant(resize: '500x500'), class: 'recordImage' if @record.image.attached? %>
+</div>
