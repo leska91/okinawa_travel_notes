@@ -1,25 +1,5 @@
 <div class="contents row">
   <% @records.each do |record| %>
-      <p><%= record.text %></p>
-      <span class="areaName">
-        <%= record.area.name %>
-      </span>
-      <%= image_tag record.image.variant(resize: '500x500'), class: 'recordImage' if record.image.attached? %>
-      <ul class="more_list">
-        <li>
-          <%= link_to '詳細', record_path(record.id) %>
-        </li>
-        <% if user_signed_in? && current_user.id == record.user_id %>
-        <li>
-          <%= link_to '編集', edit_record_path(record.id) %>
-        </li>
-        <li>
-          <%= link_to '削除', record_path(record.id), method: :delete %>
-        </li>
-        <% end %>
-      </ul>
-      <a href="/users/<%= record.user.id %>">
-          <span>投稿者</span><%= record.user.nickname %>
-      </a>
+    <%= render partial: "record", locals: { record: record } %>
   <% end %>
 </div>
