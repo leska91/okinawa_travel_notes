@@ -7,6 +7,7 @@ class Record < ApplicationRecord
   belongs_to :area
   validates :area_id, numericality: { other_than: 1 }
 
+  #検索機能
   def self.search(search)
     if search != ""
       Record.where('text LIKE(?)', "%#{search}%")
