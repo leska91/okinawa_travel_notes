@@ -15,6 +15,9 @@
   <span class="areaName">
     <%= @record.area.name %>
   </span>
+  <a href="/users/<%= @record.user.id %>">
+    <span>投稿者</span><%= @record.user.nickname %>
+  </a>
   <%= image_tag @record.image.variant(resize: '500x500'), class: 'recordImage' if @record.image.attached? %>
   
   <div class="container">
