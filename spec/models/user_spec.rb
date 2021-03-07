@@ -11,22 +11,6 @@ RSpec.describe User, type: :model do
       it '情報を正しく入力すると登録できる' do
         expect(@user).to be_valid
       end
-      it 'nicknameが漢字で登録できる' do
-        @user.nickname = '内田'
-        expect(@user).to be_valid
-      end
-      it 'nicknameがカタカナで登録できる' do
-        @user.nickname = 'ウチダ'
-        expect(@user).to be_valid
-      end
-      it 'nicknameがひらがなで登録できる' do
-        @user.nickname = 'うちだ'
-        expect(@user).to be_valid
-      end
-      it 'nicknameが英数字で登録できる' do
-        @user.nickname = 'uchida1'
-        expect(@user).to be_valid
-      end
     end
 
     context '新規登録できないとき' do
