@@ -11,7 +11,13 @@ class RecordsController < ApplicationController
   end
 
   def create
-    Record.create(record_params)
+    @record = Record.create(record_params)
+    if @record.valid?
+      @record.save
+      redirect_to root_path
+    else
+      render 'new'
+    end
   end
 
   def destroy
