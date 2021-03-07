@@ -17,7 +17,7 @@
 | Column     | Type       | Options                        |
 | ---------- | ---------- | ------------------------------ |
 | area_id    | integer    | null: false                    |
-| text       | text       |                                |
+| text       | text       | null: false                    |
 | user       | references | null: false, foreign_key: true |
 
 ### Association
