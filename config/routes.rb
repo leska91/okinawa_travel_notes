@@ -8,7 +8,5 @@ Rails.application.routes.draw do
       get 'search'
     end
   end
-  resources :rooms, only: [:create, :destroy] do
-    resources :messages, only: [:index, :create]
-  end
+  resources :rooms, only: [:new, :create]
 end
