@@ -12,20 +12,18 @@
   <body>
     <% if user_signed_in? %>
     <header class="header">
-      <div class="header__bar row">
-        <h1 class="grid-6"><a href="/">Okinawa Travel Notes</a></h1>
-          <div class="user_nav grid-6">
-            <span><%= current_user.nickname %>
-            <ul class="user__info">
-              <li>
-                <%= link_to "マイページ", "/users/#{current_user.id}" %>
-                <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
-              </li>
-            </ul>
-            </span>
-            <%= link_to "投稿する", new_record_path, class: "post" %>
-            <%= link_to "Chatする", rooms_path %>
-          </div>
+      <div class="headLeft">
+        <h1 class="headTitle">
+          <a href="/">Okinawa Travel Notes</a>
+        </h1>
+      </div>
+      <div class="headRight">
+        <div class="userInfos">
+          <%= link_to "Postする", new_record_path, class: "userInfoItem" %>
+          <%= link_to "Chatする", rooms_path, class: "userInfoItem" %>
+          <%= link_to "My Page", "/users/#{current_user.id}", class: "userInfoItem" %>
+          <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "userInfoItem" %>
+        </div>
       </div>
     </header>
     <% end %>
