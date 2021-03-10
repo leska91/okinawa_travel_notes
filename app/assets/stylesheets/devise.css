@@ -62,3 +62,56 @@
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 3px;
 }
+
+/* サインアップ画面 */
+.signUpArea {
+  margin: auto;
+}
+
+.signUpArea h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.signUpBtn {
+  border: 1px solid #dee7ec;
+  border-radius: 3px;
+  padding: 5px 10px;
+  background-color: white;
+  color: #7C7C7C;
+  margin-top: 20px;
+}
+
+.fields {
+  width: 250px;
+  border: 1px solid #dee7ec;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+
+/* パスワード忘れ画面 */
+.passwordContents {
+  background-image: url("/images/devisetop.jpg");
+  background-size: cover;
+  height: 780px;
+  width: 100%;
+  display: flex;
+}
+
+.passArea {
+  margin: auto;
+}
+
+.resetBtn {
+  border: 1px solid #dee7ec;
+  border-radius: 3px;
+  padding: 5px 10px;
+  background-color: white;
+  color: #7C7C7C;
+}
+
+.passwordContents h2 {
+  font-size: 24px;
+  color: white;
+}
