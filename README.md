@@ -11,6 +11,9 @@
 
 - has_many :records
 - has_many :comments
+- has_many :room_users
+- has_many :rooms, through: room_users
+- has_many :messages
 
 
 ## records テーブル
@@ -43,6 +46,8 @@
 ## rooms テーブル
 
 | Column | Type   | Options     |
+| ------ | ------ | ----------- |
+| name   | string | null: false |
 
 ### Association
 
