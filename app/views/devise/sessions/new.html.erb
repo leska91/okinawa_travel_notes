@@ -1,27 +1,35 @@
-<div class="contents row">
-  <div class="container">
-    <h2>Log in</h2>
-    <%= form_with model: @user, url: user_session_path, id: 'new_user', class: 'new_user', local: true do |f| %>
-      <div class="field">
-        <%= f.label :email %><br />
-        <%= f.email_field :email, autofocus: true %>
-      </div>
-
-      <div class="field">
-        <%= f.label :password %><br />
-        <%= f.password_field :password, autocomplete: "off" %>
-      </div>
-
-      <% if devise_mapping.rememberable? %>
+<div class="deviseContents">
+  <div class="appTitle">
+    <p> Okinawa Travel Notes </p>
+  </div>
+  <div class="deviseContainer">
+    <div class="loginArea">
+      <h2>Log in</h2>
+      <%= form_with model: @user, url: user_session_path, id: 'new_user', class: 'new_user', local: true do |f| %>
         <div class="field">
-          <%= f.label :remember_me %><br />
-          <%= f.check_box :remember_me %>
+          <%= f.label :email %><br />
+          <%= f.email_field :email, autofocus: true, class:'emailField' %>
         </div>
-      <% end -%>
 
-      <div class="actions">
-        <%= f.submit "Log in" %>
-      </div>
-    <% end %>
+        <div class="field">
+          <%= f.label :password %><br />
+          <%= f.password_field :password, autocomplete: "off", class: 'passField' %>
+        </div>
+
+        <% if devise_mapping.rememberable? %>
+          <div class="field">
+            <%= f.label :remember_me %><br />
+            <%= f.check_box :remember_me %>
+          </div>
+        <% end -%>
+
+        <div class="actions">
+          <%= f.submit "Log in", class: "loginBtn" %>
+        </div>
+      <% end %>
+    </div>
+    <div class="otherArea">
+      <%= render "devise/shared/links"%>
+    </div>
   </div>
 </div>

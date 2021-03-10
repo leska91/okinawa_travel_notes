@@ -17,3 +17,8 @@
  * {
   box-sizing: border-box;
 }
+
+footer p {
+  color: #7C7C7C;
+  text-align: center;
+}
