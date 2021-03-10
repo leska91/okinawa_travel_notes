@@ -1,17 +1,19 @@
 <div class="deviseContents">
-  <div class="appTitle"><p>Okinawa Travel Notes</p></div>
+  <div class="appTitle">
+    <p> Okinawa Travel Notes </p>
+  </div>
   <div class="deviseContainer">
     <div class="loginArea">
       <h2>Log in</h2>
       <%= form_with model: @user, url: user_session_path, id: 'new_user', class: 'new_user', local: true do |f| %>
         <div class="field">
           <%= f.label :email %><br />
-          <%= f.email_field :email, autofocus: true %>
+          <%= f.email_field :email, autofocus: true, class:'emailField' %>
         </div>
 
         <div class="field">
           <%= f.label :password %><br />
-          <%= f.password_field :password, autocomplete: "off" %>
+          <%= f.password_field :password, autocomplete: "off", class: 'passField' %>
         </div>
 
         <% if devise_mapping.rememberable? %>
@@ -22,7 +24,7 @@
         <% end -%>
 
         <div class="actions">
-          <%= f.submit "Log in" %>
+          <%= f.submit "Log in", class: "loginBtn" %>
         </div>
       <% end %>
     </div>

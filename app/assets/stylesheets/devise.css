@@ -1,14 +1,12 @@
 .deviseContents {
-  background-color: antiquewhite;
-  height: 640px;
+  background-image: url("/images/devisetop.jpg");
+  background-size: cover;
+  height: 780px;
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .appTitle {
-  background-color: aquamarine;
   width: 60%;
   height: 100%;
   display: flex;
@@ -18,12 +16,49 @@
 
 .appTitle p {
   font-size: 42px;
+  color: white;
+  letter-spacing: 2px;
 }
 
 .deviseContainer {
-  background-color: azure;
   width: 40%;
   height: 100%;
   display: flex;
   align-items: center;
+}
+
+.loginArea h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.field {
+  width: 300px;
+  margin: 10px 0;
+  color: white;
+}
+
+.emailField, .passField{
+  width: 250px;
+  border: 1px solid #dee7ec;
+}
+
+.actions {
+  width: 250px;
+}
+
+.loginBtn {
+  float: right;
+  border: 1px solid #dee7ec;
+  border-radius: 3px;
+  padding: 5px 10px;
+  background-color: white;
+  color: #7C7C7C;
+}
+
+.otherArea {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
 }
