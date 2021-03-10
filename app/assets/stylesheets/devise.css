@@ -62,3 +62,32 @@
   background-color: rgba(255, 255, 255, 0.3);
   border-radius: 3px;
 }
+
+/* サインアップ画面 */
+.signUpArea {
+  margin: auto;
+  text-align: center;
+}
+
+.signUpArea h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.signUpBtn {
+  border: 1px solid #dee7ec;
+  border-radius: 3px;
+  padding: 5px 10px;
+  background-color: white;
+  color: #7C7C7C;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+
+.fields {
+  width: 250px;
+  border: 1px solid #dee7ec;
+  border-radius: 3px;
+  margin-top: 5px;
+}
