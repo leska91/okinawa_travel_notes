@@ -1,0 +1,29 @@
+.deviseContents {
+  background-color: antiquewhite;
+  height: 640px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.appTitle {
+  background-color: aquamarine;
+  width: 60%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.appTitle p {
+  font-size: 42px;
+}
+
+.deviseContainer {
+  background-color: azure;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
