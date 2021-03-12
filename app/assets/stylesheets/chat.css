@@ -1,0 +1,60 @@
+.wrapper {
+  background-color: antiquewhite;
+  padding-top: 90px;
+  display: flex;
+}
+
+/* チャットユーザー選択画面 */
+.chatRoomSelect {
+  background-color: whitesmoke;
+  padding-top: 90px;
+  height: 760px;
+}
+
+.chatLine {
+  border: 1px dotted #333;
+  border-radius: 5px;
+  height: 60%;
+  width: 60%;
+  margin: 50px auto 0;
+  color: #333;
+}
+
+.chatNewRoom {
+  margin-left: 30px;
+  padding-top: 30px;
+  letter-spacing: 2px;
+  width: 90%;
+  border-bottom: 2px solid #dee7ec;
+  font-size: 28px;
+}
+
+.chatRoomField {
+  padding: 30px 0 0 30px;
+}
+
+.chatRoomName, .nameSelect{
+  border: 1px solid #dee7ec;
+  padding: 5px;
+  font-size: 14px;
+}
+
+.chatRoomName {
+  width: 280px;
+}
+
+.chatRoomField-right {
+  margin-top: 10px;
+}
+
+.chatRoomActionBtn {
+  border-radius: 10px;
+  padding: 10px 15px;
+  border: white;
+  color: white;
+  background: #9FD1F0;
+}
+
+.chatRoomActionBtn:hover {
+  background-color: #81b6e3;
+}
