@@ -46,6 +46,11 @@
   color: white;
 }
 
+.userInfoItem:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s;
+}
+
 /* 検索・投稿一覧部分 */
 .search-form {
   height: 160px;
@@ -67,11 +72,64 @@
 .search-btn {
   border-radius: 10px;
   padding: 5px 10px;
-  border: whitesmoke;
+  border: white;
+  color: white;
+  background: #9FD1F0;
+}
+
+.search-btn:hover {
+  background-color: #81b6e3;
 }
 
 .postContents {
   background-color: whitesmoke;
-  text-align: center;
+  padding-bottom: 20px;
 }
 
+.recordSection {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: white;
+  border: 1px solid #dee7ec;
+  border-radius: 5px;
+  box-shadow: 5px 5px rgba(159, 209, 240, 0.5);
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.recordInfo {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.infoHead {
+  display: flex;
+  justify-content: space-between;
+  color: #333;
+}
+
+.moreList {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.moreList li {
+  margin-left: 10px;
+}
+
+.moreList a {
+  color: #333;
+}
+
+.moreList a:hover {
+  color: #7c7c7c;
+}
+
+.recordUserName a{
+  color: #333;
+}
+
+.recordUserName a:hover {
+  color: #7c7c7c;
+}

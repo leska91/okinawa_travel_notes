@@ -1,8 +1,11 @@
 <div class="recordSection">
-  <p class="recordTitle"><%= record.text %></p>
-  <p class="areaName">撮影場所：<%= record.area.name %></p>
-  <div class="imageArea">
-    <ul class="more_list">
+  <%= image_tag record.image.variant(resize: '500x600'), class: 'recordImage' if record.image.attached? %>
+  <div class="recordInfo">
+    <div class="infoHead">
+      <p class="recordTitle"><%= record.text %></p>
+      <p class="recordArea">撮影場所：<%= record.area.name %></p>
+    </div>
+    <ul class="moreList">
       <li>
         <%= link_to '詳細', record_path(record.id) %>
       </li>
@@ -10,11 +13,10 @@
       <li>
         <%= link_to '編集', edit_record_path(record.id) %>
       </li>
-      <li>
+      <li class="last">
         <%= link_to '削除', record_path(record.id), method: :delete %>
       </li>
       <% end %>
-    <%= image_tag record.image.variant(resize: '500x600'), class: 'recordImage' if record.image.attached? %>
     </ul>
   </div>
   <span class="recordUserName">
