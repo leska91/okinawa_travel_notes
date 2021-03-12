@@ -1,8 +1,7 @@
-    <p><%= record.text %></p>
-    <span class="areaName">
-      <%= record.area.name %>
-    </span>
-    <%= image_tag record.image.variant(resize: '500x500'), class: 'recordImage' if record.image.attached? %>
+<div class="recordSection">
+  <p class="recordTitle"><%= record.text %></p>
+  <p class="areaName">撮影場所：<%= record.area.name %></p>
+  <div class="imageArea">
     <ul class="more_list">
       <li>
         <%= link_to '詳細', record_path(record.id) %>
@@ -15,7 +14,12 @@
         <%= link_to '削除', record_path(record.id), method: :delete %>
       </li>
       <% end %>
+    <%= image_tag record.image.variant(resize: '500x600'), class: 'recordImage' if record.image.attached? %>
     </ul>
-    <a href="/users/<%= record.user.id %>">
-        <span>投稿者</span><%= record.user.nickname %>
-    </a>
+  </div>
+  <span class="recordUserName">
+  <a href="/users/<%= record.user.id %>">
+      <span>投稿者</span><%= record.user.nickname %>
+  </a>
+  </span>
+</div>
