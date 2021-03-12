@@ -216,3 +216,15 @@
   background: #9FD1F0;
   margin: 30px 0 0 20px;
 }
+
+/* マイページ */
+.userRecordSection {
+  padding: 90px 0 20px 0 ;
+  background-color: whitesmoke;
+}
+
+.userNickname {
+  text-align: center;
+  padding: 20px 0;
+  color: #7c7c7c;
+}
