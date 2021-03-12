@@ -1,18 +1,18 @@
     <%= form_with(model: @record, local: true) do |form| %>
 
     <div class="areaField">
-      <%= form.label :area_id, "Area", class: "labelTitle" %>
+      <%= form.label :area_id, "撮影場所", class: "labelTitle" %>
       <%= form.collection_select(:area_id, Area.all, :id, :name, {}, {class:"areaSelect", id:"area-category"}) %>
     </div>
 
     <div class="imageField">
-      <p>クリックしてファイルをアップロード</p>
+      <p>クリックして写真をアップロード</p>
       <%= form.file_field :image, id:"item-image" %>
     </div>
 
     <div class="textField">
       <span>説明</span>
-      <%= form.text_area :text, placeholder: "text" %>
+      <%= form.text_area :text, placeholder: "text", class: 'txetForm' %>
     </div>
-    <%= form.submit "SEND" %>
+    <%= form.submit "SEND", class: 'send-btn' %>
     <% end %>
