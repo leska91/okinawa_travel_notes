@@ -13,7 +13,7 @@ class Record < ApplicationRecord
     if search != ""
       Record.where('text LIKE(?)', "%#{search}%")
     else
-      Record.all
+      Record.includes(:user).order("created_at DESC")
     end
   end
 

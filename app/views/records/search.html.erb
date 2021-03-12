@@ -3,7 +3,7 @@
   <%= form.submit "検索", class: "search-btn" %>
 <% end %>
 
-<div class="contents row">
+<div class="postContents">
   <% @records.each do |record| %>
     <%= render partial: "record", locals: { record: record } %>
   <% end %>
