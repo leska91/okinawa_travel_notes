@@ -7,7 +7,7 @@
 }
 
 .appTitle {
-  width: 60%;
+  width: 55%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -21,7 +21,7 @@
 }
 
 .deviseContainer {
-  width: 40%;
+  width: 45%;
   height: 100%;
   display: flex;
   align-items: center;
