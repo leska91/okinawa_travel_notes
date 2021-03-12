@@ -133,3 +133,86 @@
 .recordUserName a:hover {
   color: #7c7c7c;
 }
+
+/* 投稿画面 */
+.postSection {
+  padding-top: 90px;
+  height: 600px;
+  background-color: whitesmoke;
+}
+
+.postBody {
+  padding-top: 30px;
+  width: 50%;
+  margin: 0 auto;
+  background-color: white;
+  height: 100%;
+  color: #7c7c7c;
+}
+
+.postBody h3 {
+  height: 50px;
+  margin: 0 auto;
+  border-bottom: 2px solid #dee7ec;
+  font-size: 28px;
+  padding-left: 20px;
+}
+
+.areaField {
+  font-size: 20px;
+  margin-top: 30px;
+  padding-left: 20px;
+}
+
+.labelTitle {
+  display: block;
+  padding-bottom: 5px;
+}
+
+.areaSelect {
+  border: 1px solid #dee7ec;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.imageField {
+  font-size: 20px;
+  margin-top: 30px;
+  padding-left: 20px;
+}
+
+.imageField p {
+  padding-bottom: 5px;
+}
+
+#item-image {
+  font-size: 16px;
+}
+
+.textField {
+  font-size: 20px;
+  margin-top: 30px;
+  padding-left: 20px;
+}
+
+.textField span {
+  display: block;
+  padding-bottom: 5px;
+}
+
+.txetForm{
+  font-size: 18px;
+  border: 1px solid #dee7ec;
+  padding: 5px;
+  height: 40px;
+  width: 300px;
+}
+
+.send-btn {
+  border-radius: 10px;
+  padding: 10px 15px;
+  border: white;
+  color: white;
+  background: #9FD1F0;
+  margin: 30px 0 0 20px;
+}
