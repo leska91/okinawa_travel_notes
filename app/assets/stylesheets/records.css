@@ -217,6 +217,10 @@
   margin: 30px 0 0 20px;
 }
 
+.send-btn:hover {
+  background-color: #81b6e3;
+}
+
 /* マイページ */
 .userRecordSection {
   padding: 90px 0 20px 0 ;
