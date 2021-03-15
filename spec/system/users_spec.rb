@@ -16,6 +16,7 @@ RSpec.describe 'ユーザーログイン機能', type: :system do
     # ログインしていない場合、サインインページに遷移していることを確認する
     expect(current_path).to eq(new_user_session_path)
     # すでに保存されているユーザーのemailとpasswordを入力する
+    # input要素の中にあるidを指定
     fill_in 'user_email', with: @user.email
     fill_in 'user_password', with: @user.password
     # ログインボタンをクリックする
