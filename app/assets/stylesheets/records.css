@@ -232,3 +232,41 @@
   padding: 20px 0;
   color: #7c7c7c;
 }
+
+/* 詳細ページ */
+.showArea {
+  padding: 140px 0 20px 0;
+  background-color: whitesmoke;
+}
+
+/* コメント欄 */
+.commentArea {
+  margin-top: 20px;
+}
+
+#comment_text {
+  height: 50px;
+  width: 30%;
+}
+
+.show-send-btn {
+  border-radius: 10px;
+  padding: 10px 15px;
+  border: white;
+  color: white;
+  background: #9FD1F0;
+  margin-left: 20px;
+}
+
+.comments h4,.comments p {
+  color: #333;
+}
+
+.commentUsername {
+  color: #333;
+  text-decoration: none;
+}
+
+.commentUsername:hover {
+  color: #7c7c7c;
+}
