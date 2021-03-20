@@ -137,7 +137,7 @@
 /* 投稿画面 */
 .postSection {
   padding-top: 90px;
-  height: 600px;
+  height: 650px;
   background-color: whitesmoke;
 }
 
@@ -156,6 +156,10 @@
   border-bottom: 2px solid #dee7ec;
   font-size: 28px;
   padding-left: 20px;
+}
+
+.error-message {
+  margin-left: 20px;
 }
 
 .areaField {
