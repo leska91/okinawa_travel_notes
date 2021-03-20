@@ -16,12 +16,12 @@ RSpec.describe Record, type: :model do
       it 'area_idが1の場合は投稿できない' do
         @record.area_id = 1
         @record.valid?
-        expect(@record.errors.full_messages).to include("Area must be other than 1")
+        expect(@record.errors.full_messages).to include("Area を選択してください")
       end     
       it '画像が選択されてなければ投稿できない' do
         @record.image = nil
         @record.valid?
-        expect(@record.errors.full_messages).to include("Image can't be blank")
+        expect(@record.errors.full_messages).to include("Image を選択してください")
       end
       it '説明が空の場合は投稿できない' do
         @record.text = ''

@@ -33,6 +33,10 @@
   color: white;
 }
 
+.login-flash-message {
+  color: white;
+}
+
 .field {
   width: 300px;
   margin: 10px 0;
@@ -72,6 +76,15 @@
   font-size: 24px;
   margin-bottom: 10px;
   color: white;
+}
+
+#error_explanation h2 {
+  display:none;
+}
+
+#error_explanation li {
+  color: white;
+  font-size: 12px;
 }
 
 .signUpBtn {

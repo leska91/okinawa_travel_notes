@@ -1,5 +1,5 @@
     <%= form_with(model: @record, local: true) do |form| %>
-
+    <%= render 'layouts/error_messages', model: form.object %>
     <div class="areaField">
       <%= form.label :area_id, "撮影場所", class: "labelTitle" %>
       <%= form.collection_select(:area_id, Area.all, :id, :name, {}, {class:"areaSelect", id:"area-category"}) %>

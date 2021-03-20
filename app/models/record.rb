@@ -1,7 +1,8 @@
 class Record < ApplicationRecord
   extend ActiveHash::Associations::ActiveRecordExtensions
-  validates :area_id, numericality: { other_than: 1 }
-  validates :text,:image, presence: true
+  validates :area_id, numericality: { other_than: 1, message: 'を選択してください' }
+  validates :text, presence: true
+  validates :image, presence: { message: 'を選択してください' }
   belongs_to :area
   belongs_to :user
   has_many :comments, dependent: :destroy

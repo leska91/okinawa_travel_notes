@@ -2,3 +2,11 @@ ja:
   time:
     formats:
       default: "%Y/%m/%d %H:%M:%S"
+  activerecord:
+    attributes:
+      user:
+        nickname: ニックネーム
+      record:
+        text: テキスト
+        image: 画像
+        area_id: 撮影場所

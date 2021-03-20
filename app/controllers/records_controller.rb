@@ -32,6 +32,7 @@ class RecordsController < ApplicationController
   def update
     record = Record.find(params[:id])
     record.update(record_params)
+    redirect_to controller: :records, action: :show
   end
 
   def show
