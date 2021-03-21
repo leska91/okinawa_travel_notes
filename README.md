@@ -9,11 +9,11 @@
 https://okinawa-travel-notes.herokuapp.com/
 
 ## テスト用アカウント
-- ユーザー1
-メールアドレス：test01@test.com
+- ユーザー1<br>
+メールアドレス：test01@test.com<br>
 password:test01
-- ユーザー2
-メールアドレス：test02@test.com
+- ユーザー2<br>
+メールアドレス：test02@test.com<br>
 password:test02
 
 ## 利用方法
