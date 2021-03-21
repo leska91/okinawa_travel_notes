@@ -1,7 +1,4 @@
-# okinawa_travel_notes
-
-## アプリケーション名
-okinawa_travel_notes
+# アプリケーション名 okinawa_travel_notes
 
 ## アプリケーション概要
 - アカウントを作成し、沖縄の写真を情報付きで投稿・編集・削除することができます
