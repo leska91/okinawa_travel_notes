@@ -6,7 +6,7 @@
 - ユーザーと１対１でチャットをすることができます
 
 ## URL
-https://okinawa-travel-notes.herokuapp.com/
+https://okinawa-travel-notes.herokuapp.com/ <br>
 ※Herokuでデプロイしているため、Herokuの仕様により本番環境にアクセス頂いた際に画像リンクが切れている可能性があります。
 
 ## テスト用アカウント
